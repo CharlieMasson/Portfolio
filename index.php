@@ -57,10 +57,10 @@
         </ul>
 
         <ul class="lesserMobileMenu">
-            <li><a href="#" class="icone flipOnHover cv fa-solid fa-scroll"></a></li>
-            <li><a href="#" class="icone github flipOnHover fa-brands fa-github-alt"></a></li>
-            <li><a href="#" class="icone linkedin flipOnHover fa-brands fa-linkedin-in"></a></li>
-            <li><a href="#" class="icone flipOnHover fa-regular fa-paper-plane"></a></li>
+            <li><a href="document/cv.pdf" class="icone flipOnHover cv fa-solid fa-scroll"></a></li>
+            <li><a href="https://github.com/CharlieMasson" class="icone github flipOnHover fa-brands fa-github-alt"></a></li>
+            <li><a href="https://www.linkedin.com/in/charlie-masson-985b111a2/" class="icone linkedin flipOnHover fa-brands fa-linkedin-in"></a></li>
+            <li><a href="#contact" class="icone flipOnHover fa-regular fa-paper-plane"></a></li>
         </ul>
 
     </section>
@@ -81,10 +81,10 @@
 
         <nav>
             <ul>
-                <li><a href="#" class="icone flipOnHover cv fa-solid fa-scroll"></a></li>
-                <li><a href="#" class="icone flipOnHover github fa-brands fa-github-alt"></a></li>
-                <li><a href="#" class="icone flipOnHover linkedin fa-brands fa-linkedin-in"></a></li>
-                <li><a href="#" class="icone flipOnHover message fa-regular fa-paper-plane"></a></li>
+                <li><a href="document/cv.pdf" class="icone flipOnHover cv fa-solid fa-scroll"></a></li>
+                <li><a href="https://github.com/CharlieMasson" class="icone flipOnHover github fa-brands fa-github-alt"></a></li>
+                <li><a href="https://www.linkedin.com/in/charlie-masson-985b111a2/" class="icone flipOnHover linkedin fa-brands fa-linkedin-in"></a></li>
+                <li><a href="#contact" class="icone flipOnHover message fa-regular fa-paper-plane"></a></li>
             </ul>
         </nav>
 
@@ -553,7 +553,7 @@
             <div class="form">
                 <form class="mailForm">
                     <input type="email" name="emailAdress" placeholder="Adresse Email">
-                    <input type="tel" name="phoneNumber" placeholder="Numéro de téléphone (00-00-00-00-00)" pattern="\+?\d{2,3}-\d{2}-\d{2}-\d{2}-\d{2}">
+                    <input type="tel" name="phoneNumber" placeholder="Numéro de téléphone (àà600-00-00-00)" pattern="\+?\d{2}-d{2}-\d{2}-\d{2}-\d{2}">
                     <input type="text" name="name" placeholder="Nom">
                     <input type="text" name="surname" placeholder="Prénom">
                     <textarea name="Message" rows="10" placeholder="Message"></textarea> 
@@ -566,47 +566,44 @@
     </section>
 
     <footer>
-        <div class="arrowUp"><a href="#aboutMe"><i class="fa-solid fa-arrow-up"></i></a></div>
+        <div class="arrowUp"><a href="#aboutMe" class="bob"><i class="fa-solid fa-arrow-up"></i></a></div>
         <div class="flexboxFooter">
             <div class="contactFooter">
                 <ul>
                     <li>
-                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-phone"></i> 06 75 15 42 03
                     </li>
                     <li>
-                        <i class="fa-solid fa-house"></i>
+                        <i class="fa-solid fa-house"></i> 149 Rue Jean Jaurès, La Croix-Saint-Ouen 60610
                     </li>
                     <li>
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope"></i> charlie.mass.cm@gmail.com
                     </li>
                 </ul>
             </div>
             <div class="menuFooter">
                 <ul>
                     <li>
-                        <a href="#aboutMe"> À Propos </a>
+                        <a href="#aboutMe" class="wobble-horizontal"> À Propos </a>
                     </li>
                     <li>
-                        <a href="#projects"> Projets </a>
+                        <a href="#projects" class="wobble-horizontal"> Projets </a>
                     </li>
                     <li>
-                        <a href="#contact"> Me Contacter </a>
+                        <a href="#contact" class="wobble-horizontal"> Me Contacter </a>
                     </li>
                     <li>
-                        <a href="#"> Connexion </a>
+                        <a href="#" class="wobble-horizontal"> Connexion </a>
                     </li>
                 </ul>
             </div>
-            <div class="reseauCVFooter">
+            <div class="reseauxCVFooter">
                 <ul>
                     <li>
-                        <a href="#"><i class="fa-solid fa-scroll"></i></a>
+                        <a href="https://github.com/CharlieMasson"><i class="fa-brands fa-github-alt"></i>https://github.com/CharlieMasson</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa-brands fa-github-alt"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/charlie-masson-985b111a2/"><i class="fa-brands fa-linkedin-in"></i>https://www.linkedin.com/in/charlie-masson-985b111a2/</a>
                     </li>
                 </ul>
             </div>
