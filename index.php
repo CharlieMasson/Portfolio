@@ -52,6 +52,7 @@
         <ul class="mainMobileMenu">
             <li> <a href="#aboutMe" onclick="HideMenu()"> À Propos </a> </li>
             <li> <a href="#projects" onclick="HideMenu()"> Projets </a> </li>
+            <!--<li> <a href="#certifications" onclick="HideMenu()"> Certifications </a> </li>-->
             <li> <a href="#contact" onclick="HideMenu()"> Me Contacter </a> </li>
             <li> <a href="#" onclick="HideMenu()"> Connexion </a> </li>
         </ul>
@@ -73,6 +74,7 @@
             <ul>
                 <li class="menuActive "><a href="#aboutMe" class="defaultMenu menuJS"> À Propos </a></li>
                 <li class=""><a href="#projects" class="defaultMenu menuJS"> Projets </a></li>
+                <!--<li class=""><a href="#certifications" class="defaultMenu menuJS"> Certifications </a></li>-->
                 <li class=""><a href="#contact" class="defaultMenu menuJS"> Me Contacter </a></li>
                 <li class=""><a href="#" class="defaultMenu menuJS"> Connexion </a></li>
             </ul>
@@ -538,6 +540,16 @@
         </div>
 
     </section>
+    <section class="scrollspy" id="certifications">
+        <h2> Certifications </h2>
+        <div class="certification">
+            <h3> Titre certif </h3>
+            <h5> 10-10-2010 </h5>
+            <p> Lorem ipsum dolor sit amet. Quo excepturi voluptas ab consequatur iste ea nihil accusamus. Aut commodi natus et assumenda exercitationem 
+                cum libero iure id reiciendis error aut quasi tenetur vel libero dicta. Et galisum dolorum 33 doloribus atque qui molestias mollitia est consequatur 
+                quidem non quam incidunt id molestiae modi hic eius voluptatibus. Aut quia quia et molestias inventore vel voluptatem galisum est quaerat dolor. </p>
+        </div>
+    </section>
 
     <section class="scrollspy" id="contact">
 
@@ -553,7 +565,7 @@
             <div class="form">
                 <form class="mailForm">
                     <input type="email" name="emailAdress" placeholder="Adresse Email">
-                    <input type="tel" name="phoneNumber" placeholder="Numéro de téléphone (àà600-00-00-00)" pattern="\+?\d{2}-d{2}-\d{2}-\d{2}-\d{2}">
+                    <input type="tel" name="phoneNumber" placeholder="Numéro de téléphone (00-00-00-00-00)" pattern="\+?\d{2}-d{2}-\d{2}-\d{2}-\d{2}">
                     <input type="text" name="name" placeholder="Nom">
                     <input type="text" name="surname" placeholder="Prénom">
                     <textarea name="Message" rows="10" placeholder="Message"></textarea> 
@@ -589,6 +601,9 @@
                     <li>
                         <a href="#projects" class="wobble-horizontal"> Projets </a>
                     </li>
+                   <!-- <li>
+                        <a href="#certifications" class="wobble-horizontal"> Certifications </a>
+                    </li>-->
                     <li>
                         <a href="#contact" class="wobble-horizontal"> Me Contacter </a>
                     </li>
@@ -600,10 +615,10 @@
             <div class="reseauxCVFooter">
                 <ul>
                     <li>
-                        <a href="https://github.com/CharlieMasson"><i class="fa-brands fa-github-alt"></i>https://github.com/CharlieMasson</a>
+                        <a href="https://github.com/CharlieMasson"><i class="fa-brands fa-github-alt"></i> https://github.com/CharlieMasson</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/charlie-masson-985b111a2/"><i class="fa-brands fa-linkedin-in"></i>https://www.linkedin.com/in/charlie-masson-985b111a2/</a>
+                        <a href="https://www.linkedin.com/in/charlie-masson-985b111a2/"><i class="fa-brands fa-linkedin-in"></i> https://www.linkedin.com/in/charlie-masson-985b111a2/</a>
                     </li>
                 </ul>
             </div>
