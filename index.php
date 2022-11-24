@@ -1,11 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang ="fr">
 
 <head>
 
     <title>Portfolio</title>
 
     <!-- lien css-->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- lien Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -17,7 +18,7 @@
 
     <!-- jquery -->
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js"integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
 
     <!-- font -->
@@ -37,7 +38,7 @@
         <div class="firstPageContent">
             <h1 id="loadName"> Charlie Masson </h1>
             <h5 id="loadText"> Développeur Web </h5>
-            <img id="loading" src="img/loading.gif">
+            <img id="loading" src="img/loading.gif" alt="loading">
             <div id="buttonWrapper"> 
                 <a id="buttonAccess" class="" onclick="CloseFirstPage()" onmouseover="OpenDoor()" onmouseleave="CloseDoor()"><i class="buttonIcon fa-solid fa-door-closed" id="door"></i></a> 
             </div>
@@ -107,13 +108,13 @@
                 </div>
                 <div class="techs">
                     <div class="flexboxTechs">
-                        <img src="img/HTML5.png" class="HTML5 pop">
-                        <img src="img/CSS3.png" class="CSS3 pop">
-                        <img src="img/Bootstrap.png" class="Bootstrap pop">
-                        <img src="img/PHP.png" class="PHP pop">
-                        <img src="img/c.png" class="C pop">
-                        <img src="img/js.png" class="JS pop">
-                        <img src="img/mySQL.png" class="mySQL pop">
+                        <img src="img/HTML5.png" class="HTML5 pop" alt="HTML5">
+                        <img src="img/CSS3.png" class="CSS3 pop" alt="CSS3">
+                        <img src="img/Bootstrap.png" class="Bootstrap pop" alt="Bootstrap">
+                        <img src="img/PHP.png" class="PHP pop" alt="PHP">
+                        <img src="img/c.png" class="C pop" alt="C#">
+                        <img src="img/js.png" class="JS pop" alt="js">
+                        <img src="img/mySQL.png" class="mySQL pop" alt="mySQL">
                     </div>
                 </div>
             </div>
@@ -181,7 +182,7 @@
                         echo'<div class="modal-dialog" role="document">';
                             echo'<div class="modal-content">';
                                 echo'<div class="modal-header">';
-                                    echo'<h5 class="modal-title modalTitle">' . $myProjects['title'][$ind] . '<span id="id"></span></h5>';
+                                    echo'<h5 class="modal-title modalTitle">' . $myProjects['title'][$ind] . '</h5>';
                                     echo'<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">x</button>';
                                 echo'</div>';
                                 echo'<div class="modal-body">';
@@ -299,7 +300,7 @@
                                     echo'<div class="hWrapper">';
                                         echo '<h3>' . $myProjects['title'][0] . '</h3>';
                                     echo '</div>';
-                                    echo'<img src="' . $myProjects['thumbnail'][0] . '">';
+                                    echo'<img src="' . $myProjects['thumbnail'][0] . '" alt="image projet">';
                                 echo'</div>';
                             echo'</a>';
                             
@@ -309,7 +310,7 @@
                                         echo'<div class="hWrapper">';
                                             echo '<h3>' . $myProjects['title'][1] . '</h3>';
                                         echo '</div>';
-                                        echo'<img src="' . $myProjects['thumbnail'][1] . '">';
+                                        echo'<img src="' . $myProjects['thumbnail'][1] . '" alt="image projet">';
                                     echo'</div>';
                                 echo'</a>';
                                 if($nbProjects>2){
@@ -318,7 +319,7 @@
                                         echo'<div class="hWrapper">';
                                             echo '<h3>' . $myProjects['title'][2] . '</h3>';
                                         echo '</div>';
-                                        echo'<img src="' . $myProjects['thumbnail'][2] . '">';
+                                        echo'<img src="' . $myProjects['thumbnail'][2] . '" alt="image projet">';
                                     echo'</div>';
                                 echo'</a>';
                                 }
@@ -345,7 +346,7 @@
                                             echo'<div class="hWrapper ">';
                                                     echo '<h3>' . $myProjects['title'][$nbProject] . '</h3>';
                                             echo '</div>';
-                                            echo'<img src="' . $myProjects['thumbnail'][$nbProject] . '">';
+                                            echo'<img src="' . $myProjects['thumbnail'][$nbProject] . '" alt="image projet">';
                                         echo'</div>';
                                     echo'</a>';
                                     $nbProject++;
@@ -404,7 +405,7 @@
                                     echo'<div class="hWrapper">';
                                         echo '<h3>' . $myProjects['title'][0] . '</h3>';
                                     echo '</div>';
-                                    echo'<img src="' . $myProjects['thumbnail'][0] . '">';
+                                    echo'<img src="' . $myProjects['thumbnail'][0] . '" alt="image projet">';
                                 echo'</div>';
                             echo'</a>';
                             if ($nbProjects>1){
@@ -413,9 +414,9 @@
                                         echo'<div class="hWrapper">';
                                             echo '<h3>' . $myProjects['title'][1] . '</h3>';
                                         echo '</div>';
-                                        echo'<img src="' . $myProjects['thumbnail'][1] . '">';
+                                        echo'<img src="' . $myProjects['thumbnail'][1] . '" alt="image projet">';
                                     echo'</div>';
-                                echo '<a data-bs-toggle="modal" data-bs-target="#projectBox' . $myProjects['id'][1] . '">';
+                                echo '</a>';
                             }
                         echo'</div>';
                     echo'</div>';
@@ -439,7 +440,7 @@
                                             echo'<div class="hWrapper">';
                                                 echo '<h3>' . $myProjects['title'][$nbProject] . '</h3>';
                                             echo '</div>';
-                                            echo'<img src="' . $myProjects['thumbnail'][$nbProject] . '">';
+                                            echo'<img src="' . $myProjects['thumbnail'][$nbProject] . '" alt="image projet">';
                                         echo'</div>';
                                     echo'</a>';
                                     $nbProject++;
@@ -494,7 +495,7 @@
                                     echo'<div class="hWrapper">';
                                         echo '<h3>' . $myProjects['title'][0] . '</h3>';
                                     echo '</div>';
-                                    echo'<img src="' . $myProjects['thumbnail'][0] . '">';
+                                    echo'<img src="' . $myProjects['thumbnail'][0] . '" alt="image projet">';
                                 echo'</div>';
                             echo'</a>';
                         echo'</div>';
@@ -512,7 +513,7 @@
                                         echo'<div class="hWrapper">';
                                             echo '<h3>' . $myProjects['title'][$nbProject] . '</h3>';
                                         echo '</div>';
-                                        echo'<img src="' . $myProjects['thumbnail'][$nbProject] . '">';
+                                        echo'<img src="' . $myProjects['thumbnail'][$nbProject] . '" alt="image projet">';
                                     echo'</div>';
                                 echo'</a>';
                             echo'</div>';
@@ -542,7 +543,31 @@
     </section>
     <section class="scrollspy" id="certifications">
         <h2> Certifications </h2>
+        <div class="firstLine"></div>
+        <div class="point"></div>
+        <div class="date"> <h5><i class="fa-solid fa-calendar"></i> 10-10-2010 </h5> </div>
+        <div class="link"></div>
         <div class="certification">
+            <h3> Titre certif </h3>
+            <h5><i class="fa-solid fa-calendar"></i> 10-10-2010 </h5>
+            <p> Lorem ipsum dolor sit amet. Quo excepturi voluptas ab consequatur iste ea nihil accusamus. Aut commodi natus et assumenda exercitationem 
+                cum libero iure id reiciendis error aut quasi tenetur vel libero dicta. Et galisum dolorum 33 doloribus atque qui molestias mollitia est consequatur 
+                quidem non quam incidunt id molestiae modi hic eius voluptatibus. Aut quia quia et molestias inventore vel voluptatem galisum est quaerat dolor. </p>
+        </div>
+        <div class="firstLineReversed"></div>
+        <div class="pointReversed"></div>
+        <div class="linkReversed"></div>
+        <div class="certificationReversed">
+            <h3> Titre certif </h3>
+            <h5> 10-10-2010 </h5>
+            <p> Lorem ipsum dolor sit amet. Quo excepturi voluptas ab consequatur iste ea nihil accusamus. Aut commodi natus et assumenda exercitationem 
+                cum libero iure id reiciendis error aut quasi tenetur vel libero dicta. Et galisum dolorum 33 doloribus atque qui molestias mollitia est consequatur 
+                quidem non quam incidunt id molestiae modi hic eius voluptatibus. Aut quia quia et molestias inventore vel voluptatem galisum est quaerat dolor. </p>
+        </div>
+        <div class="firstLineReversed"></div>
+        <div class="pointReversed"></div>
+        <div class="linkReversed"></div>
+        <div class="certificationReversed">
             <h3> Titre certif </h3>
             <h5> 10-10-2010 </h5>
             <p> Lorem ipsum dolor sit amet. Quo excepturi voluptas ab consequatur iste ea nihil accusamus. Aut commodi natus et assumenda exercitationem 
@@ -558,7 +583,7 @@
         <div class="flexboxContact">
             <div class="imgContact">
                 <a href="mailto:charlie.mass.cm@gmail.com">
-                    <img src="img/gmail.png">
+                    <img src="img/gmail.png" alt="logo gmail">
                 </a>
             </div>
 
@@ -625,11 +650,10 @@
         </div>
     </footer>
 
+    <script src="js/scrollspy.js"></script>
+    <!--<script src="js/load.js"></script>-->
+    <script src="js/menu.js"></script>
+
 </body>
-
-<script src="js/scrollspy.js"></script>
-<!--<script src="js/load.js"></script>-->
-<script src="js/menu.js"></script>
-
 </html>
     

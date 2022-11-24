@@ -506,7 +506,7 @@ body{
 
 /*aboutme*/
 
-.textAboutMe h2{
+h2{
     color: white !important;
 }
 
@@ -602,7 +602,6 @@ body{
 
 #projects h2{
     text-align: center;
-    color: black !important;
 }
 
 .bigCarousel{
@@ -610,7 +609,7 @@ body{
     padding-bottom: 50px;
 }
 
-.flexBoxCarousel{
+.flexboxCarousel{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -656,7 +655,7 @@ body{
     position: absolute;
     z-index: 10;
     width: 400px;
-    bottom: -18;
+    bottom: -18px;
     background: rgba(143, 143, 143, 0.479);
 }
 
@@ -743,6 +742,27 @@ body{
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
     }
 
+}
+
+/* certification */
+
+#certifications h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.flexboxCertification{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+}
+
+.certification{
+    position: relative;
+    width: 700px;
+    background: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* modal */
@@ -944,11 +964,17 @@ footer{
 }
 
 .menuFooter{
-    margin: 20px;
+    margin: 20px 50px 20px 20px;
+    display: block;
 }
 
 .reseauxCVFooter{
     margin: 20px;
+}
+
+.menuActive ul{
+    display: block;
+    left: 0;
 }
 
 .menuFooter ul li{
@@ -961,4 +987,10 @@ footer{
         margin: 50px 50px 0 50px;
     }
 
+}
+
+@media screen and (max-width:1220px) {
+    .flexboxFooter{
+        justify-content: left !important;
+    }
 }
