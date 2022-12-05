@@ -33,7 +33,7 @@
 </head>
 <body>
 
-    <!--<section id="firstPage">
+    <section id="firstPage">
 
         <div class="firstPageContent">
             <h1 id="loadName"> Charlie Masson </h1>
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-    </section>-->
+    </section>
 
     <div id="bigBurger"><a id="burgerDisplay" class="fa-solid fa-burger pop"></a></div>
 
@@ -55,7 +55,7 @@
             <li> <a href="#projects" onclick="HideMenu()"> Projets </a> </li>
             <!--<li> <a href="#certifications" onclick="HideMenu()"> Certifications </a> </li>-->
             <li> <a href="#contact" onclick="HideMenu()"> Me Contacter </a> </li>
-            <li> <a href="#" onclick="HideMenu()"> Connexion </a> </li>
+            <li> <a href="connexion.php" onclick="HideMenu()"> Connexion </a> </li>
         </ul>
 
         <ul class="lesserMobileMenu">
@@ -77,7 +77,7 @@
                 <li class=""><a href="#projects" class="defaultMenu menuJS"> Projets </a></li>
                 <!--<li class=""><a href="#certifications" class="defaultMenu menuJS"> Certifications </a></li>-->
                 <li class=""><a href="#contact" class="defaultMenu menuJS"> Me Contacter </a></li>
-                <li class=""><a href="#" class="defaultMenu menuJS"> Connexion </a></li>
+                <li class=""><a href="connexion.php" class="defaultMenu menuJS"> Connexion </a></li>
             </ul>
 
         </header>
@@ -541,40 +541,6 @@
         </div>
 
     </section>
-    <section class="scrollspy" id="certifications">
-        <h2> Certifications </h2>
-        <div class="firstLine"></div>
-        <div class="point"></div>
-        <div class="date"> <h5><i class="fa-solid fa-calendar"></i> 10-10-2010 </h5> </div>
-        <div class="link"></div>
-        <div class="certification">
-            <h3> Titre certif </h3>
-            <h5><i class="fa-solid fa-calendar"></i> 10-10-2010 </h5>
-            <p> Lorem ipsum dolor sit amet. Quo excepturi voluptas ab consequatur iste ea nihil accusamus. Aut commodi natus et assumenda exercitationem 
-                cum libero iure id reiciendis error aut quasi tenetur vel libero dicta. Et galisum dolorum 33 doloribus atque qui molestias mollitia est consequatur 
-                quidem non quam incidunt id molestiae modi hic eius voluptatibus. Aut quia quia et molestias inventore vel voluptatem galisum est quaerat dolor. </p>
-        </div>
-        <div class="firstLineReversed"></div>
-        <div class="pointReversed"></div>
-        <div class="linkReversed"></div>
-        <div class="certificationReversed">
-            <h3> Titre certif </h3>
-            <h5> 10-10-2010 </h5>
-            <p> Lorem ipsum dolor sit amet. Quo excepturi voluptas ab consequatur iste ea nihil accusamus. Aut commodi natus et assumenda exercitationem 
-                cum libero iure id reiciendis error aut quasi tenetur vel libero dicta. Et galisum dolorum 33 doloribus atque qui molestias mollitia est consequatur 
-                quidem non quam incidunt id molestiae modi hic eius voluptatibus. Aut quia quia et molestias inventore vel voluptatem galisum est quaerat dolor. </p>
-        </div>
-        <div class="firstLineReversed"></div>
-        <div class="pointReversed"></div>
-        <div class="linkReversed"></div>
-        <div class="certificationReversed">
-            <h3> Titre certif </h3>
-            <h5> 10-10-2010 </h5>
-            <p> Lorem ipsum dolor sit amet. Quo excepturi voluptas ab consequatur iste ea nihil accusamus. Aut commodi natus et assumenda exercitationem 
-                cum libero iure id reiciendis error aut quasi tenetur vel libero dicta. Et galisum dolorum 33 doloribus atque qui molestias mollitia est consequatur 
-                quidem non quam incidunt id molestiae modi hic eius voluptatibus. Aut quia quia et molestias inventore vel voluptatem galisum est quaerat dolor. </p>
-        </div>
-    </section>
 
     <section class="scrollspy" id="contact">
 
@@ -589,10 +555,10 @@
 
             <div class="form">
                 <form class="mailForm">
-                    <input type="email" name="emailAdress" placeholder="Adresse Email">
-                    <input type="tel" name="phoneNumber" placeholder="Numéro de téléphone (00-00-00-00-00)" pattern="\+?\d{2}-d{2}-\d{2}-\d{2}-\d{2}">
-                    <input type="text" name="name" placeholder="Nom">
-                    <input type="text" name="surname" placeholder="Prénom">
+                    <input class="writtenInput" type="email" name="emailAdress" placeholder="Adresse Email">
+                    <input class="writtenInput" type="tel" name="phoneNumber" placeholder="Numéro de téléphone (00-00-00-00-00)" pattern="\+?\d{2}-d{2}-\d{2}-\d{2}-\d{2}">
+                    <input class="writtenInput" type="text" name="name" placeholder="Nom">
+                    <input class="writtenInput" type="text" name="surname" placeholder="Prénom">
                     <textarea name="Message" rows="10" placeholder="Message"></textarea> 
                     <button>Envoyer</button>
 
@@ -609,9 +575,6 @@
                 <ul>
                     <li>
                         <i class="fa-solid fa-phone"></i> 06 75 15 42 03
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-house"></i> 149 Rue Jean Jaurès, La Croix-Saint-Ouen 60610
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i> charlie.mass.cm@gmail.com
@@ -633,7 +596,7 @@
                         <a href="#contact" class="wobble-horizontal"> Me Contacter </a>
                     </li>
                     <li>
-                        <a href="#" class="wobble-horizontal"> Connexion </a>
+                        <a href="connexion.php" class="wobble-horizontal"> Connexion </a>
                     </li>
                 </ul>
             </div>
@@ -651,7 +614,7 @@
     </footer>
 
     <script src="js/scrollspy.js"></script>
-    <!--<script src="js/load.js"></script>-->
+    <script src="js/load.js"></script>
     <script src="js/menu.js"></script>
 
 </body>
